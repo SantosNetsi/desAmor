@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dedicado Para Ti</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="heart">
+            <span>&#10084;</span>
+        </div>
+        <h1>Videos Especiales</h1>
+        <center>
+            <iframe src="https://www.youtube.com/embed/ysSxxIqKNN0?autoplay=1" name="video" width="550" height="324"
+                scrolling="No" frameborder="0" id="zhaend" style="border:#000000 1px solid;" allowtransparency="yes"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen title="Playlist Musical de Zhaend.Net"></iframe>
+            <select class="select optional" name="lista" id="zhaend-playlist"
+                onchange="video.location.href=this.options[this.selectedIndex].value">
+                <option value="https://www.youtube.com/embed/ysSxxIqKNN0?autoplay=1"><label>WwW.Zhaend.Net</label>
+                </option>
+            </select>
+        </center>
+
+        <script>
+            /** jQuery plugins */
+            (function ($) {
+                $.fn.populate = function (list) {
+                    return this.append(ZHplaylist.map(item => $('<option>', {
+                        text: item.nombre,
+                        value: item.video
+                    })));
+                };
+            })(jQuery);
+        </script>
+        <br>
+
+        <script>
+            var ZHplaylist = [{
+                video: "https://www.youtube.com/embed/ysSxxIqKNN0?autoplay=1",
+                nombre: "   -----][[:Ranking Musical Zhaend.Net:]][----   "
+            },
+            {
+                video: "https://www.youtube.com/embed/5NPBIwQyPWE?autoplay=1",
+                nombre: "Avril Lavigne - Complicated (Official Video)"
+            },
+            {
+                video: "https://www.youtube.com/embed/23g5HBOg3Ic?autoplay=1",
+                nombre: "Ed Sheeran, Pokémon - Celestial [Official Video]"
+            },
+            {
+                video: "https://www.youtube.com/embed/vx2u5uUu3DE?autoplay=1",
+                nombre: "Bon Jovi - It's My Life (Official Music Video)"
+            },
+            {
+                video: "https://www.youtube.com/embed/FGouJkBD0ps?autoplay=1",
+                nombre: "Blink-182 - ANTHEM PART 3 (Live Video)"
+            },
+            {
+                video: "https://www.youtube.com/embed/7MI3buZedOw?autoplay=1",
+                nombre: "Blink 182 - Edging"
+            },
+            {
+                video: "https://www.youtube.com/embed/XAbcgmwq3EU?autoplay=1",
+                nombre: "Simpleplan - You love is a Lie"
+            },
+            ];
+            $('.select.optional').empty().populate(ZHplaylist);
+        </script>
+        <hr>
+        <h1>Para Mi Osita</h1>
+        <p>Querida: Yudith,</p>
+        <p>Quiero que sepas que cada día contigo han sido una bendición. Gracias por ser la mejor compañera que podría
+            pedir. Te amo más de lo que las palabras pueden expresar.</p>
+        <p>Con todo mi amor,</p>
+        <p>Jose Santos (Tu neni)</p>
+
+        <p>Sinceramente, no sé cuándo leas este mensaje, si es que llegas a leerlo. Es para decirte todas esas cosas que
+            quedaron pendientes, aquellas que quizás en su momento me guardé, y otras que dije muy seguido. Tal vez hay
+            muchas promesas, sueños y metas que nunca pudimos cumplir juntos. 😢❤️‍🩹</p>
+
+        <p>De cualquier manera, quiero que sepas que te escribo este mensaje con todo mi corazón, una mente llena de recuerdos y con un nudo en la
+            garganta. Nuestra historia ha sido un viaje lleno de risas, lágrimas, amor y aprendizajes.
+            😢💔</p>
+
+        <p>Así es como me siento al escribirte estas palabras. Francamente, no sé si algún día volveré a verte o si tú
+            regresarás a mi lado. Pero, estés donde estés, quiero que sepas que siempre ocuparás un lugar muy especial
+            en mi corazón. ❤️✨</p>
+
+        <p>Fuiste parte de mi vida, de mi historia. Aunque hace algún tiempo dejamos de saber el uno del otro, jamás
+            podremos negar que en su momento conectamos, nuestras almas se encontraron y aprendieron mutuamente lo que
+            necesitaban en ese instante. 🥺</p>
+
+        <p>Quizás nuestros destinos eran así. Pero desde aquí, desde la distancia, te deseo lo mejor. Desde aquí cierro
+            definitivamente ese capítulo de mi vida donde escribí muchas historias bonitas contigo, pero lo hago con
+            cariño, con el mismo cuidado con el que soñé tratarte siempre, con la misma cautela y amor que sentí por ti.
+            💔🥀
+        </p>
+
+        <p>No sé si algún día volveré a sentir lo mismo que sentí contigo; esa conexión que nunca había experimentado
+            con nadie más en mi vida. ¿Cómo puedo explicarte lo que nos decíamos con nuestras miradas cuando estábamos
+            juntos? ¿Cómo podré olvidar esas atardeceres/noches en las que nos quedábamos viendo peliculas compartiendo
+            nuestros días, nuestros
+            deseos de estar juntos en el futuro, soñando con hacer tantas cosas juntos, siendo nosotros mismos? ✨🥀</p>
+
+        <p>Te confieso algo: este tipo de cariño, este tipo de amor, no se olvida fácilmente. Pero mi corazón está
+            tranquilo. ¿Sabes por qué? Porque pude vivir cada momento a tu lado, y me siento muy feliz de haberlo vivido
+            contigo. ❤️‍🩹</p>
+
+        <p>Fuiste más que mi alma gemela; fuiste mi cómplice, mi compañera. Fuiste la persona que me acompañó en muchos
+            días en los que me sentía apagado y te quedaste conmigo, haciéndome feliz. En verdad, fuiste y serás alguien
+            muy especial para mí. 🥺🥀😢</p>
+
+        <p>Quiero agradecerte por todo lo que vivimos, por todas las cosas que decidiste compartir conmigo. Por haberte
+            atrevido tanto y enseñarme que la conexión entre personas no es cuestión de tiempo, sino de ganas. Por eso,
+            hoy te deseo lo mejor, lo más bonito, lo que siempre quise para ti. Hoy, como ayer, le pido mucho a Dios por
+            ti, porque ahora me doy cuenta de que Dios es primero, antes que cualquier relación. Ahora rezo mucho para
+            que
+            Dios siempre te cuide y te guíe hacia ese buen trabajo que sueñas alcanzar.. Que nunca pierdas esa
+            valentía, Esa personalidad tan distintiva que tienes. Créeme que celebraré en silencio cada meta que
+            cumplas, cada sueño que
+            logres, aunque no sea conmigo. Créeme que me marcharé muy feliz sabiendo que estás mejor sin mí. 💔😢🥀</p>
+
+        <p>Sé que mereces mucho más de lo que pude darte. Tal vez no fui perfecto y cometí errores que nos llevaron a
+            separarnos. Como ser humano, sé que nadie es perfecto y que a veces fallamos. Pero créeme que aprendí mucho
+            de mis errores. Sé que ya ha pasado un tiempo desde nuestra separación, pero aun así te sigo amando, aunque
+            ya
+            no estés conmigo. Por eso, hoy te digo gracias, gracias por todo y por los bellos momentos. Porque fuiste la
+            manera en que Dios me mostró que el amor sí existe. Cuídate mucho, abrígate, come bien y no descuides tu
+            salud.
+            Esto será hasta pronto. Te amo mucho. 😢🥀</p>
+        <hr>
+        <p>REFLEXIÓN</p>
+
+        <p>Nunca obligaré a nadie a quedarse a mi lado. Si crees que puedes encontrar a alguien mejor que yo en otro
+            lugar, adelante, no te detendré. La vida es demasiado corta para aferrarse a alguien que quiere irse. Creo
+            en la libertad y en la sinceridad de los sentimientos. Si debes quedarte, hazlo porque tu corazón te dice
+            que aquí es donde perteneces, no porque te lo pedí. Merece alguien que vea mi valor y entienda lo que aporto
+            a su vida. No quiero a alguien que se quede por miedo a la soledad o por costumbre; quiero a alguien que se
+            quede porque no se imagina la vida sin mí. La puerta siempre está abierta, eres libre de irte en cualquier
+            momento. Si crees que tu felicidad está en otro lugar, no me interpondré en tu camino. Mientras tanto,
+            seguiré adelante y construyendo mi propia vida, sintiéndome plenamente satisfecho. Mi felicidad no depende
+            de tu presencia, sino de mi capacidad para crecer y ser una mejor versión de mí mismo cada día..
+        </p>
+    </div>
+
+</body>
+
+</html>
