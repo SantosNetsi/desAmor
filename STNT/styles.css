@@ -16,7 +16,10 @@ html {
 
 .container {
     background-color: #fff;
-    background-image: url('https://raw.githack.com/SantosNetsi/desAmor/2e50ed9031cd196b90820d2ffd5adb4fe13713b4/STNT/styles.css');
+    background-image: url('https://raw.githubusercontent.com/SantosNetsi/desAmor/main/STNT/img/love-bg.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     padding: 2rem;
     margin: 0 auto;
     border-radius: 10px;
@@ -27,7 +30,7 @@ html {
     /*position: relative;
     display: inline-block;
     padding: 2rem;
-    background-image: url('img/love-bg.gif');
+    background-image: url('https://raw.githubusercontent.com/SantosNetsi/desAmor/main/STNT/img/love-bg.gif');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
