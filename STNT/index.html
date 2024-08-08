@@ -17,63 +17,10 @@
             <span>&#10084;</span>
         </div>
         <h1>Videos Especiales</h1>
-        <center>
-            <iframe src="https://www.youtube.com/embed/ysSxxIqKNN0?autoplay=1" name="video" width="550" height="324"
-                scrolling="No" frameborder="0" id="zhaend" style="border:#000000 1px solid;" allowtransparency="yes"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen title="Playlist Musical de Zhaend.Net"></iframe>
-            <select class="select optional" name="lista" id="zhaend-playlist"
-                onchange="video.location.href=this.options[this.selectedIndex].value">
-                <option value="https://www.youtube.com/embed/ysSxxIqKNN0?autoplay=1"><label>WwW.Zhaend.Net</label>
-                </option>
-            </select>
-        </center>
-
-        <script>
-            /** jQuery plugins */
-            (function ($) {
-                $.fn.populate = function (list) {
-                    return this.append(ZHplaylist.map(item => $('<option>', {
-                        text: item.nombre,
-                        value: item.video
-                    })));
-                };
-            })(jQuery);
-        </script>
+            <div id="videoContainer" class="video-container">
+                <!-- Video se cargará aquí -->
+            </div>
         <br>
-
-        <script>
-            var ZHplaylist = [{
-                video: "https://www.youtube.com/embed/ysSxxIqKNN0?autoplay=1",
-                nombre: "   -----][[:Ranking Musical Zhaend.Net:]][----   "
-            },
-            {
-                video: "https://www.youtube.com/embed/5NPBIwQyPWE?autoplay=1",
-                nombre: "Avril Lavigne - Complicated (Official Video)"
-            },
-            {
-                video: "https://www.youtube.com/embed/23g5HBOg3Ic?autoplay=1",
-                nombre: "Ed Sheeran, Pokémon - Celestial [Official Video]"
-            },
-            {
-                video: "https://www.youtube.com/embed/vx2u5uUu3DE?autoplay=1",
-                nombre: "Bon Jovi - It's My Life (Official Music Video)"
-            },
-            {
-                video: "https://www.youtube.com/embed/FGouJkBD0ps?autoplay=1",
-                nombre: "Blink-182 - ANTHEM PART 3 (Live Video)"
-            },
-            {
-                video: "https://www.youtube.com/embed/7MI3buZedOw?autoplay=1",
-                nombre: "Blink 182 - Edging"
-            },
-            {
-                video: "https://www.youtube.com/embed/XAbcgmwq3EU?autoplay=1",
-                nombre: "Simpleplan - You love is a Lie"
-            },
-            ];
-            $('.select.optional').empty().populate(ZHplaylist);
-        </script>
         <hr>
         <h1>Para Mi Osita</h1>
         <p>Querida: Yudith,</p>
