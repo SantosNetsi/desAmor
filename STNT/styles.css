@@ -201,9 +201,6 @@ blockquote:before{position:absolute;top:0;left:5px;content:'\e244';font-family:'
     .video-container iframe {
         max-width: 100%; /* Asegura que el video no exceda el ancho del contenedor */
     }
-  #xat {
-    height: 4040px!important;
-}
   .container {
     padding: 10px!important;
 }
