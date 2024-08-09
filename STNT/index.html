@@ -13,6 +13,49 @@
 <body>
 
     <div class="container">
+        <center><h1>Con todo mi cariño, para ti 😊</h1></center>
+        <!-- Galería de videos -->
+    <div class="gallery zhaend-scrollbar">
+        <div class="video-item" data-video-id="gW3OZC1NDTk">
+            <div class="thumbnail">
+                <img src="https://i.imgur.com/id2m0i1.jpeg" alt="Reyli Barba - Amor del Bueno" class="item-1">
+            </div>
+            <p>Reyli Barba - Amor del Bueno</p>
+        </div>
+      <div class="video-item" data-video-id="yIVccRy5YeM">
+            <div class="thumbnail">
+                <img src="https://img.youtube.com/vi/yIVccRy5YeM/0.jpg" alt="Dejame Hablar Contigo" class="item-1">
+            </div>
+            <p>Dejame Hablar Contigo</p>
+        </div>
+      <div class="video-item" data-video-id="UCF9oHXhDMU">
+            <div class="thumbnail">
+                <img src="https://img.youtube.com/vi/UCF9oHXhDMU/0.jpg" alt="Andrés Calamaro - Flaca" class="item-1">
+            </div>
+            <p>Andrés Calamaro - Flaca</p>
+        </div>
+      <div class="video-item" data-video-id="gH8oCh1nn88">
+            <div class="thumbnail">
+                <img src="https://img.youtube.com/vi/gH8oCh1nn88/0.jpg" alt="- Si No Te Hubieras Ido" class="item-1">
+            </div>
+            <p>Marco Antonio Solís - Si No Te Hubieras Ido</p>
+        </div>
+      <div class="video-item" data-video-id="HU1l47ZQEyY">
+            <div class="thumbnail">
+                <img src="https://img.youtube.com/vi/HU1l47ZQEyY/0.jpg" alt="- Ahora Que Te Vas" class="item-1">
+            </div>
+            <p>Christian Daniel - Ahora Que Te Vas</p>
+        </div>
+        <!-- Repite para otros videos -->
+        <div class="video-item" data-video-id="KMihKmoYfe8">
+            <div class="thumbnail">
+                <img src="https://img.youtube.com/vi/KMihKmoYfe8/0.jpg" alt="Nothing - The Script" class="item-2">
+                
+            </div>
+            <p>Nothing - The Script</p>
+        </div>
+        <!-- Agrega más videos según sea necesario -->
+    </div>
         <div class="heart">
             <span>&#10084;</span>
         </div>
@@ -21,6 +64,67 @@
                 <!-- Video se cargará aquí -->
             </div>
         <br>
+    <!-- Contenedor para el video actual -->
+    <div id="videoContainer" class="video-container responsive-video-wrap">
+        <!-- Video se cargará aquí -->
+    </div>
+
+    <script src="script.js"></script>
+
+    <script>
+document.addEventListener('DOMContentLoaded', () => {
+    const videoItems = document.querySelectorAll('.video-item');
+
+    videoItems.forEach(item => {
+        const thumbnail = item.querySelector('.thumbnail');
+        const playIcon = document.createElement('img');
+
+        playIcon.src = 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZb1VLARIQ1EFuFYx1yMP1hI6LpWCD5Y8kPjBUUdkczxZAzKFZCME01mTjEt9WLPTrRgR2H7bR2ljvMIb0-2WK0N1UOLgViG9LO3Gd9H1kiPG9GP7TZYoIQztALV5q5Yd5lTDrO0XLU4ks/s60/play-radio.png';
+        playIcon.className = 'play-icon';
+        thumbnail.appendChild(playIcon);
+
+        item.addEventListener('mouseenter', () => {
+            playIcon.style.opacity = 1;
+            playIcon.style.transform = 'translate(-50%, -50%) scale(1.2)';
+        });
+
+        item.addEventListener('mouseleave', () => {
+            playIcon.style.opacity = .7;
+            playIcon.style.transform = 'translate(-50%, -50%)';
+        });
+
+        item.addEventListener('click', () => {
+            const videoId = item.getAttribute('data-video-id');
+            loadVideo(videoId);
+        });
+    });
+
+    function loadVideo(videoId) {
+        const videoContainer = document.getElementById('videoContainer');
+        videoContainer.innerHTML = `
+            <iframe id="videoPlayer" src="https://www.youtube.com/embed/${videoId}?autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        `;
+
+        const iframe = document.getElementById('videoPlayer');
+        const player = new YT.Player(iframe, {
+            events: {
+                'onStateChange': (event) => {
+                    if (event.data === YT.PlayerState.ENDED) {
+                        playNextVideo();
+                    }
+                }
+            }
+        });
+    }
+
+    function playNextVideo() {
+        // Implement logic for the next video if needed
+    }
+});
+
+
+</script>
+        
         <hr>
         <h1>Para Mi Osita</h1>
         <p>Querida: Yudith,</p>
