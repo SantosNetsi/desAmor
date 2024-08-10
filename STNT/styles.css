@@ -139,6 +139,10 @@ p:last-child {
     .video-container iframe {
         max-width: 100%; /* Asegura que el video no exceda el ancho del contenedor */
     }
+    p {
+    font-size: 13px;
+    line-height: 12px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -155,6 +159,10 @@ p:last-child {
     .video-item .play-icon {
         width: 10px; /* Ajusta aún más el tamaño del ícono de play */
         height: 10px;
+    }
+    p {
+    font-size: 14px;
+    line-height: 10px;
     }
 
 } 
