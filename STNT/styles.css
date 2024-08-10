@@ -61,7 +61,7 @@ h1 {
     color: #1d3557;
 }
 
-p {
+.post-body p {
     font-size: 18px;
     line-height: 28px;
     margin: 0.5rem 0;
@@ -139,9 +139,9 @@ p:last-child {
     .video-container iframe {
         max-width: 100%; /* Asegura que el video no exceda el ancho del contenedor */
     }
-    p {
-    font-size: 13px;
-    line-height: 12px;
+    .post-body p {
+    font-size: 16px;
+    line-height: 24px;
     }
 }
 
@@ -160,9 +160,9 @@ p:last-child {
         width: 10px; /* Ajusta aún más el tamaño del ícono de play */
         height: 10px;
     }
-    p {
+    .post-body p {
     font-size: 14px;
-    line-height: 10px;
+    line-height: 20px;
     }
 
 } 
