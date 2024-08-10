@@ -38,7 +38,10 @@ html {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
     color: #fff;*/
 }
-
+blockquote{position:relative;background-color:var(--gray-bg)!important;color:var(--title-color)!important;font-style:normal;padding:20px;margin:0;border-radius:var(--radius)}
+blockquote:before{position:absolute;top:0;left:5px;content:'\e244';font-family:'Material Icons Round';font-size:60px;color:var(--title-color);font-style:normal;font-weight:400;line-height:1;opacity:.05;margin:0}
+.responsive-video-wrap{position:relative;width:100%;padding:0;padding-top:56%}
+.responsive-video-wrap iframe{position:absolute;top:0;left:0;width:100%;height:100%}
 .heart {
     font-size: 4rem;
     color: #e63946;
@@ -62,7 +65,7 @@ p {
     font-size: 18px;
     line-height: 28px;
     margin: 0.5rem 0;
-    background-color: #f6e8fb;
+    background-color: rgb(246 232 251 / 54%);
     color: #6c6a6a;
     padding: 0.5em;
     border-radius: .25em;
