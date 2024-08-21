@@ -45,7 +45,7 @@ blockquote:before{position:absolute;top:0;left:5px;content:'\e244';font-family:'
 .heart {
     font-size: 4rem;
     color: #e63946;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     animation: beat 1s infinite alternate;
 }
 
@@ -168,7 +168,7 @@ p:last-child {
 }
 .carousel {
     position: relative;
-    max-width: 800px;
+    max-width: 75%;
     margin: auto;
     overflow: hidden;
 }
@@ -179,8 +179,13 @@ p:last-child {
 }
 
 .carousel-images img {
+    width: 250px;
+    height: 250px;
     max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
     display: block;
+    padding: 0 10px;
 }
 
 button {
