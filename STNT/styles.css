@@ -60,7 +60,28 @@ h1 {
     margin-bottom: 1rem;
     color: #1d3557;
 }
-
+.santosnetsi {
+    border: #603 dotted;
+    padding: 0.5em;
+    margin: 1em 2em;
+}
+.santosnetsi8 {
+    background: #CCC;
+    padding: 1em;
+}
+.santosnetsi p {
+    font-size: x-large;
+    display: block;
+    text-align: center;
+}
+p.santosnetsi8a {
+    color: #D1D1D1;
+    text-shadow: -1px -1px white, 1px 1px #333;
+}
+p.santosnetsi8b {
+    color: #D1D1D1;
+    text-shadow: 1px 1px white, -1px -1px #333;
+}
 .post-body p {
     font-size: 18px;
     line-height: 28px;
