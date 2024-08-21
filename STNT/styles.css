@@ -15,13 +15,13 @@ html {
 }
 
 .container {
-    background-color: transparent;
-    background-image: url('https://raw.githubusercontent.com/SantosNetsi/desAmor/main/STNT/img/love-bg.gif');
+    background-color: white;
+    /*background-image: url('https://raw.githubusercontent.com/SantosNetsi/desAmor/main/STNT/img/love-bg.gif');*/
     /*background-size: cover;*/
     background-repeat: repeat;
     background-position: center;
     padding: 0rem;
-    margin: 0 auto;
+    margin: 30px auto;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     max-width: 970px;
@@ -54,19 +54,37 @@ blockquote:before{position:absolute;top:0;left:5px;content:'\e244';font-family:'
         transform: scale(1.2);
     }
 }
+.yuli {
+  width: 100%;
+  height: 300px;
+  background-color: green;
+}
 
-h1 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    color: #1d3557;
+h1.yuli8 {
+  color: #FFF;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: 700;
+  font: italic bold 100px Georgia, Serif;
+  text-shadow: -4px 3px 0 #34d16e, -14px 7px 0 #0a0e27;
+}
+ h3 {
+    font-size: x-large;
+    display: block;
+    text-align: center;
+}
+h3.yulis {
+    color: blue;
+    text-shadow: #333 0.1em 0.1em 0.05em;
 }
 .santosnetsi {
     border: #603 dotted;
     padding: 0.5em;
-    margin: 1em 2em;
+    margin: 1em auto;
 }
 .santosnetsi8 {
-    background: #CCC;
+    background-color: #CCC;
+    background-image: url(https://raw.githubusercontent.com/SantosNetsi/desAmor/main/STNT/img/love-bg.gif);
     padding: 1em;
 }
 .santosnetsi p {
@@ -181,9 +199,11 @@ p:last-child {
         width: 10px; /* Ajusta aún más el tamaño del ícono de play */
         height: 10px;
     }
-    .post-body p {
-    font-size: 14px;
-    line-height: 20px;
+    .yuli {
+   height: 12px;
+    }
+    h1.yuli8 {
+   font: italic bold 30px Georgia, Serif;
     }
 
 } 
